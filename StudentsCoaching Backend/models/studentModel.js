@@ -28,9 +28,11 @@ var studentSchema = new mongoose.Schema({
   "due":{ 
     type:String
 },
- 
+ "installmentsPaid":{
+  type:String
+ }
   
 });
 
 var studentsdataModel=mongoose.model("details",studentSchema);
-module.exports =studentsdataModel;
+module.exports = studentsdataModel;
