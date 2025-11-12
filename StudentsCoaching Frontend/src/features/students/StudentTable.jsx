@@ -11,7 +11,7 @@ function StudentTable() {
   const [students, setStudents] = useState([]);
   const [search, setSearch] = useState("");
   const [filteredStudents, setFilteredStudents] = useState([]);
-  const [selectedStudent, setSelectedStudent] = useState(); // For viewing one student's details
+  const [selectedStudent, setSelectedStudent] = useState(); 
   const { isLoading, data } = useGetAllStudentsQuery();
   const [deleteStudentFn] = useDeleteStudentMutation();
   const [getAllStudentsFn] = useLazyGetAllStudentsQuery();
