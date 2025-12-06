@@ -176,6 +176,7 @@ function StudentTable() {
                         >
                           Delete
                         </button>
+                        <button>View</button>
                       </td>
                     </tr>
                   ))}

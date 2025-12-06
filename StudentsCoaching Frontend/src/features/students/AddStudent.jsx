@@ -28,12 +28,12 @@ function AddStudent() {
         console.error(err);
         alert("Failed to add student!");
       }
-    },
+    },*
   });
 
   useEffect(() => {
-  const total = Number(addStudentForm.values.totalFee) || 0;
-  const paid = Number(addStudentForm.values.amountPaid) || 0;
+  const total = Number(addStudentForm.values.totalFee);
+  const paid = Number(addStudentForm.values.amountPaid);
   const due = total - paid >= 0 ? total - paid : 0;
   addStudentForm.setFieldValue("due", due.toString());
 }, [addStudentForm.values.totalFee, addStudentForm.values.amountPaid]);
